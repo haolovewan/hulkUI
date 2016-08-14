@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url(iconfont/iconfont.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑"; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  /* IE9*/
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* 默认占位符 start */
+.pc-row, .hao-row {
+  padding: 5px; }
+
+.btn, .btn.btn-primary, .btn.btn-success, .btn.btn-danger, .hao-row {
+  border-radius: 5px; }
+
+/*h标签*/
+h1 {
+  line-height: 2.5em;
+  font-size: 1.5em; }
+
+.h1 {
+  line-height: 2.5em;
+  font-size: 1.5em; }
+
+h2 {
+  line-height: 2.4em;
+  font-size: 1.4em; }
+
+.h2 {
+  line-height: 2.4em;
+  font-size: 1.4em; }
+
+h3 {
+  line-height: 2.3em;
+  font-size: 1.3em; }
+
+.h3 {
+  line-height: 2.3em;
+  font-size: 1.3em; }
+
+h4 {
+  line-height: 2.2em;
+  font-size: 1.2em; }
+
+.h4 {
+  line-height: 2.2em;
+  font-size: 1.2em; }
+
+h5 {
+  line-height: 2.1em;
+  font-size: 1.1em; }
+
+.h5 {
+  line-height: 2.1em;
+  font-size: 1.1em; }
+
+h6 {
+  line-height: 2em;
+  font-size: 1em; }
+
+.h6 {
+  line-height: 2em;
+  font-size: 1em; }
+
+/*h标签结束*/
+/*btn 按钮*/
+.btn, .btn.btn-primary, .btn.btn-success, .btn.btn-danger {
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  padding: 5px 12px;
+  color: #111;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+  cursor: pointer; }
+
+.btn-primary.btn {
+  background-color: #006dcc;
+  background-image: linear-gradient(to bottom, #08c, #04c);
+  color: #f9f9f9; }
+
+.btn-success.btn {
+  background-color: #5bb75b;
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  color: #f9f9f9; }
+
+.btn-danger.btn {
+  background-color: #da4f49;
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  color: #f9f9f9; }
+
+/*btn 按钮结束*/
+/* 默认占位符 end */
+/*一列 start*/
+/* 一行 */
+.pc-row {
+  display: -webkit-flex;
+  display: flex;
+  width: 960px;
+  /* 一列 end */ }
+  .pc-row .pc-col-1 {
+    width: 80px; }
+  .pc-row .pc-col-2 {
+    width: 160px; }
+  .pc-row .pc-col-3 {
+    width: 240px; }
+  .pc-row .pc-col-4 {
+    width: 320px; }
+  .pc-row .pc-col-5 {
+    width: 400px; }
+  .pc-row .pc-col-6 {
+    width: 480px; }
+  .pc-row .pc-col-7 {
+    width: 560px; }
+  .pc-row .pc-col-8 {
+    width: 640px; }
+  .pc-row .pc-col-9 {
+    width: 720px; }
+  .pc-row .pc-col-10 {
+    width: 800px; }
+  .pc-row .pc-col-11 {
+    width: 880px; }
+  .pc-row .pc-col-12 {
+    width: 960px; }
+
+/*版本 1.0 start row*/
+/*一行*/
+.hao-row {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  height: auto; }
+
+/*没有圆角*/
+.no-radius {
+  border-radius: 0; }
+
+/*没有padding*/
+.no-padding {
+  padding: 0; }
+
+/*一行中子元素有border*/
+.hao-row.has-border > :nth-child(n) {
+  border: 1px solid #eee;
+  margin-left: -2px; }
+
+.hao-row.no-border > :nth-child(n) {
+  border: 0; }
+
+/*一行中子元素border为0*/
+/*一行换行*/
+.hao-row.hao-warp {
+  flex-wrap: wrap; }
+
+/*一行不换行*/
+.hao-row.hao-nowarp {
+  flex-wrap: nowrap; }
+
+.col, .hao-row .col, .hao-row.hao-warp .col, .hao-row.hao-warp.hao-warp-3 .col, .hao-row.hao-warp.hao-warp-4 .col, .hao-row.hao-warp.hao-warp-5 .col, .hao-row.hao-warp.hao-warp-6 .col, .hao-row .col-10, .hao-row .col-20, .hao-row .col-30, .hao-row .col-40, .hao-row .col-50, .hao-row .col-60, .hao-row .col-70, .hao-row .col-80, .hao-row .col-90, .hao-row .col-100 {
+  height: auto;
+  padding: 5px; }
+
+/*一列*/
+.hao-row .col, .hao-row.hao-warp .col, .hao-row.hao-warp.hao-warp-3 .col, .hao-row.hao-warp.hao-warp-4 .col, .hao-row.hao-warp.hao-warp-5 .col, .hao-row.hao-warp.hao-warp-6 .col, .hao-row .col-10, .hao-row .col-20, .hao-row .col-30, .hao-row .col-40, .hao-row .col-50, .hao-row .col-60, .hao-row .col-70, .hao-row .col-80, .hao-row .col-90, .hao-row .col-100 {
+  flex: 1 1 auto; }
+
+/*一列 换行*/
+.hao-row.hao-warp .col, .hao-row.hao-warp.hao-warp-3 .col, .hao-row.hao-warp.hao-warp-4 .col, .hao-row.hao-warp.hao-warp-5 .col, .hao-row.hao-warp.hao-warp-6 .col, .hao-row.hao-warp .col-10, .hao-row.hao-warp .col-20, .hao-row.hao-warp .col-30, .hao-row.hao-warp .col-40, .hao-row.hao-warp .col-50, .hao-row.hao-warp .col-60, .hao-row.hao-warp .col-70, .hao-row.hao-warp .col-80, .hao-row.hao-warp .col-90, .hao-row.hao-warp .col-100 {
+  flex: 1 1 30% !important; }
+
+.hao-row.hao-warp.hao-warp-3 .col, .hao-row.hao-warp.hao-warp-3 .col-10, .hao-row.hao-warp.hao-warp-3 .col-20, .hao-row.hao-warp.hao-warp-3 .col-30, .hao-row.hao-warp.hao-warp-3 .col-40, .hao-row.hao-warp.hao-warp-3 .col-50, .hao-row.hao-warp.hao-warp-3 .col-60, .hao-row.hao-warp.hao-warp-3 .col-70, .hao-row.hao-warp.hao-warp-3 .col-80, .hao-row.hao-warp.hao-warp-3 .col-90, .hao-row.hao-warp.hao-warp-3 .col-100 {
+  flex: 1 1 28.33333% !important; }
+
+.hao-row.hao-warp.hao-warp-4 .col, .hao-row.hao-warp.hao-warp-4 .col-10, .hao-row.hao-warp.hao-warp-4 .col-20, .hao-row.hao-warp.hao-warp-4 .col-30, .hao-row.hao-warp.hao-warp-4 .col-40, .hao-row.hao-warp.hao-warp-4 .col-50, .hao-row.hao-warp.hao-warp-4 .col-60, .hao-row.hao-warp.hao-warp-4 .col-70, .hao-row.hao-warp.hao-warp-4 .col-80, .hao-row.hao-warp.hao-warp-4 .col-90, .hao-row.hao-warp.hao-warp-4 .col-100 {
+  flex: 1 1 20% !important; }
+
+.hao-row.hao-warp.hao-warp-5 .col, .hao-row.hao-warp.hao-warp-5 .col-10, .hao-row.hao-warp.hao-warp-5 .col-20, .hao-row.hao-warp.hao-warp-5 .col-30, .hao-row.hao-warp.hao-warp-5 .col-40, .hao-row.hao-warp.hao-warp-5 .col-50, .hao-row.hao-warp.hao-warp-5 .col-60, .hao-row.hao-warp.hao-warp-5 .col-70, .hao-row.hao-warp.hao-warp-5 .col-80, .hao-row.hao-warp.hao-warp-5 .col-90, .hao-row.hao-warp.hao-warp-5 .col-100 {
+  flex: 1 1 15% !important; }
+
+.hao-row.hao-warp.hao-warp-6 .col, .hao-row.hao-warp.hao-warp-6 .col-10, .hao-row.hao-warp.hao-warp-6 .col-20, .hao-row.hao-warp.hao-warp-6 .col-30, .hao-row.hao-warp.hao-warp-6 .col-40, .hao-row.hao-warp.hao-warp-6 .col-50, .hao-row.hao-warp.hao-warp-6 .col-60, .hao-row.hao-warp.hao-warp-6 .col-70, .hao-row.hao-warp.hao-warp-6 .col-80, .hao-row.hao-warp.hao-warp-6 .col-90, .hao-row.hao-warp.hao-warp-6 .col-100 {
+  flex: 1 1 11.66667% !important; }
+
+.hao-row:nth-child(n) {
+  background: #ffffff; }
+
+.hao-row.hao-warp:nth-child(n) {
+  background: #ffffff; }
+
+.hao-row .col-10 {
+  flex: 1 1 10%; }
+
+.hao-row .col-20 {
+  flex: 1 1 20%; }
+
+.hao-row .col-30 {
+  flex: 1 1 30%; }
+
+.hao-row .col-40 {
+  flex: 1 1 40%; }
+
+.hao-row .col-50 {
+  flex: 1 1 50%; }
+
+.hao-row .col-60 {
+  flex: 1 1 60%; }
+
+.hao-row .col-70 {
+  flex: 1 1 70%; }
+
+.hao-row .col-80 {
+  flex: 1 1 80%; }
+
+.hao-row .col-90 {
+  flex: 1 1 90%; }
+
+.hao-row .col-100 {
+  flex: 1 1 100%; }
+
+/*版本 1.0 end row*/
