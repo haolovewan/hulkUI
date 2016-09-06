@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* 一行 */
+.h-row{
+  display: flex;
+}
+/* 换行 */
+.h-row.h-wrap{
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.h-row.h-child-row{
+  display: block !important;
+}
+/* 一列 */
+.h-col{
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* 列 h-col-10 ~ h-col-100 */
+@for $i from 10 through 100 {
+  @if $i % 10 == 0 {
+    .h-col.h-col-#{$i} {
+      flex: 0 0 #{$i+"%"};
+    }
+  }
+  @else {
+    .h-col.h-col-#{$i} {
+      flex: 0 0 #{$i+"%"};
+    }
+  }
+  .h-col.h-col-offset-#{$i} {
+    margin-left: #{$i+px};
+  }
+}
+
+/* 特殊的列 */
+.h-col.h-col-50{
+  flex: 0 0 50%;
+}
+.h-col.h-col-33{
+  flex: 0 0 33.3333%;
+}
+.h-col.h-col-25{
+  flex: 0 0 25%;
+}
+/* 特殊的列 end */
+
+/* 灰色边框 */
+//.h-row.border-light{
+//  border: 1px solid #E6E6E6;
+//}
+/* 无边框 */
+.h-row.no-border{
+  border: 0px !important;
+}
+/* 子元素灰色边框 */
+.h-row.border-light :nth-child(n){
+  border: 0.5px solid #E6E6E6;
+}
