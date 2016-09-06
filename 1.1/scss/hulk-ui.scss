@@ -33,8 +33,20 @@
     }
   }
   .h-col.h-col-offset-#{$i} {
-    margin-left: #{$i+px};
+    margin-left: #{$i+'%'};
   }
+}
+//子元素上部分
+.h-col.h-col-top{
+  align-self: flex-start;
+}
+//子元素中部分
+.h-col.h-col-center{
+  align-self: center;
+}
+//子元素下部分
+.h-col.h-col-bottom{
+  align-self: flex-end;
 }
 
 /* 特殊的列 */
